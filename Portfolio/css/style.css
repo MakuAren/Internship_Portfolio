@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: rgb(243, 243, 243);
+    width: 100%;
+    font-family: sans-serif;
+}
+/*========================================================*/
+nav {
+    position: fixed;
+    color: rgb(220,220,220);
+    top: 0;
+    z-index: 10;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navContainer {
+    width: 100%;
+    max-width: 1200px;
+    /* border-bottom: groove .5px;
+    box-shadow: 0 10px 0px rgba(0,0,0,.5);
+    border-color: #616161; */
+    border-bottom: .2px solid transparent;
+    border-image: linear-gradient(to right,rgba(56,2,155,0), rgba(100,100,100,1), rgba(100,100,100,1), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
+
+#navOptions{
+    float: right;
+    text-decoration: none;
+    margin-top: -40px;
+    margin-right: 0px;
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#logoContainer{
+    margin: 10px 0px 0px 100px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    transition: width .25s linear;
+}
+
+#logoContainer:hover{
+    width: 140px;
+}
+
+#lname{
+    font-weight: bold;
+    top: 18px;
+    width: 100px;
+    position: absolute;
+    color: rgb(224, 74, 74);
+    font-size: 12px;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+}
+
+ul#navOptions li a{
+    text-decoration: none;
+    color: rgb(220,220,220);
+    display: block;
+    text-align: center;
+    padding: 18px 25px 13px 25px;
+    font-size: 80%;
+    font-weight: 600;
+    transition: background-color .2s linear;
+}
+
+nav li{
+    float: left;
+    display: inline;
+}
+/*========================================================*/
+#header {
+    margin-top: 60px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*========================================================*/
+#hContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 100px;
+    height:500px;
+}
+
+#pContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#pPic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#greet {
+    padding-top: 5px;
+    color: #acacac;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+#qoute, #greet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#qoute h1 {
+    letter-spacing: .2em;
+    font-weight: 100;
+    width: 50%;
+    max-width: 500px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*========================================================*/
+#feature {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+}
+
+#feature li {
+    display: inline;
+    margin: 80px;
+}
+
+#feature li img {
+    cursor: pointer;
+    z-index: 5;
+    width: 100px;
+    opacity: .8;
+}
+
+#skills {
+    opacity: 0;
+}
+
+#skill .active, .btn:hover img{
+    width: 130px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+/*========================================================*/
+
+#projects {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+#projects img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+#projects .activeP {
+    display: block;
+}
+
+#projContainer {
+    margin-top: 50px;
+    margin-left: 10%;
+    max-width: 1050px;
+    width: 80%;
+}
+
+#projects h2 {
+    float: right;
+    width: 100%;
+    max-width: 500px;
+}
+
+.img {
+    display: none;
+}
+
+/*========================================================*/
+footer {
+    margin-left: 7%;
+    width: 86%;
+    height: 300px;
+    background-color: #0e0e0e;
+}
+
+footer img {
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 50px;
+    opacity: .7;
+}
+
+footer img:hover {
+    margin-top: -15px;
+    height: 80px;
+    opacity: 1;
+}
+
+#fContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+footer h5 {
+    margin-top: 140px;
+    margin-right: 50px;
+    float: right;
+    
+}
+
+@media screen and (max-width: 690px) {
+    #navContainer {
+        height: 100px;
+    }
+    #logoContainer {
+        margin-left: 45%;
+        margin-right: 0px;
+    }
+    #navOptions{
+        float: none;
+        margin-top: 0px;
+    }
+    #feature li {
+        margin: 60px;
+    }
+
+    footer h5{
+        margin-right: 5%;
+    }
+}
